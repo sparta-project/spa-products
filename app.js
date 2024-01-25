@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use("/api", Router);
 
+const router = express.Router();
+
 app.listen(PORT, () => {
   console.log(PORT, "포트로 서버가 열렸어요!");
 });
